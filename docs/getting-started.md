@@ -1,1 +1,0 @@
-# How to get started with Alvalor

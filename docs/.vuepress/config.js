@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Alvalor',
-  description: 'A radically modular blockchain ecosystem',
+  title: 'Rholang Tutorial',
+  description: 'Learn Rholang with Joshy',
   markdown: {
     // Remove the permalinks next to each header
     anchor: { permalink: false }
@@ -9,40 +9,35 @@ module.exports = {
   // Configuration for the (default) theme
   themeConfig: {
     nav: [
-      { text: 'Explore', link: '/roadmap' },
       {
-        text: 'Components',
+        text: 'Tutorials',
         items: [
-          { text: 'Base layer', link: '/components/baselayer' },
-          { text: 'Conditional Transactions', link: '/components/conditional-transactions' }
+          { text: 'Rholang 101', link: '/lesson1' },
+          { text: 'Rholang 201', link: '/lesson1' }
         ]
       },
-      { text: 'Roadmap', link: '/roadmap' },
-      { text: 'Github', link: 'https://github.com/alvalor' },
+      { text: 'Documentation', link: 'https://developer.rchain.coop/' },
+      { text: 'RChain', link: 'https://rchain.coop' },
     ],
     sidebar: [
-      ['/what-is-alvalor', 'What is Alvalor?'],
-      ['/getting-started', 'Get Started'],
-      '/roadmap',
+      ['/lesson1', 'Introduction'],
+      '/receiving',
       {
-        title: 'Core Concepts',
+        title: 'Rholang 101',
         collapsable: true,
         children: [
-          '/minimalism',
-          '/adaptability',
-          '/components',
-          '/concept4',
-          '/concept5',
+          '/sending-and-stdout',
+          '/receiving'
         ]
       },
       {
-        title: 'Use Cases',
+        title: 'Rholang 201',
         collapsable: true,
         children: [
-          '/microtransactions',
-          '/iot'
+          '/lesson1',
+          '/lesson2'
         ]
-      },
+      }
     ]
   }
 }
